@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TAJ Signature Masala | Authentic Indian Spice Blends</title>
+<meta name="description" content="TAJ Signature Masala — authentic Chicken, Mutton and Fish Fry Masala blends made for rich aroma and bold flavour.">
+<meta name="theme-color" content="#080808">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:#070707;color:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.55;overflow-x:hidden
+}
+:root{--gold:#e9b52d;--gold2:#ffd866;--dark:#0d0d0d;--muted:#a5a5a5}
+a{text-decoration:none}
+
+header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(7,7,7,.94);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid #252525
+}
+nav{
+  width:min(1450px,94%);
+  margin:auto;padding:16px 10px;
+  display:flex;align-items:center;justify-content:space-between;gap:25px
+}
+.logo{font:900 30px Georgia,serif;letter-spacing:5px;color:var(--gold)}
+.logo small{
+  display:block;color:#fff;
+  font:700 8px Arial,sans-serif;
+  letter-spacing:5px;margin-top:3px
+}
+.navlinks{display:flex;gap:32px}
+.navlinks a{color:#aaa;font-size:13px;font-weight:700}
+.navlinks a:hover{color:var(--gold)}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:14px 22px;border-radius:9px;
+  background:linear-gradient(135deg,var(--gold2),var(--gold));
+  color:#090909;font-weight:900;
+  transition:.2s;border:0;cursor:pointer
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(233,181,45,.18)}
+.btn.dark{background:#151515;color:#fff;border:1px solid #3b3b3b}
+
+main{width:min(1450px,94%);margin:auto}
+
+.hero{
+  min-height:620px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:55px;padding:70px 20px
+}
+.hero-copy{padding-left:4%}
+.kicker{
+  color:var(--gold);font-size:11px;
+  letter-spacing:4px;font-weight:900
+}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif}
+h1{
+  font-size:clamp(48px,6vw,82px);
+  line-height:1.01;margin:17px 0 22px
+}
+h1 span,h2 span{color:var(--gold)}
+.hero p{
+  max-width:650px;color:#aaa;
+  font-size:18px;line-height:1.8;margin-bottom:28px
+}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+
+.hero-image{
+  display:flex;justify-content:center;align-items:center
+}
+.hero-image img{
+  width:100%;max-width:610px;max-height:560px;
+  object-fit:contain;border-radius:20px;
+  border:1px solid #3b3016;
+  box-shadow:0 25px 70px rgba(0,0,0,.6)
+}
+
+.section{padding:75px 20px}
+.heading{text-align:center;margin-bottom:38px}
+.heading h2{
+  font-size:clamp(38px,5vw,62px);
+  line-height:1.05;margin:10px 0 14px
+}
+.heading p{max-width:700px;margin:auto;color:#999;font-size:16px}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px
+}
+.card{
+  background:#0d0d0d;
+  border:1px solid #292929;
+  border-radius:17px;overflow:hidden;
+  box-shadow:0 18px 50px rgba(0,0,0,.25)
+}
+.card img{
+  width:100%;height:390px;
+  display:block;object-fit:contain;
+  background:#090909
+}
+.card.wide img{height:390px}
+.card-content{padding:21px;text-align:center}
+.card h3{font-size:25px;margin-bottom:6px}
+.card p{color:#8f8f8f;font-size:13px}
+
+.features{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:16px
+}
+.feature{
+  background:#101010;border:1px solid #292929;
+  border-radius:14px;padding:28px 18px;text-align:center
+}
+.feature-icon{font-size:28px;margin-bottom:10px}
+.feature strong{display:block;color:var(--gold);font-size:14px;margin-bottom:7px}
+.feature p{color:#888;font-size:13px}
+
+.showcase{
+  display:grid;grid-template-columns:1.1fr .9fr;
+  gap:30px;align-items:center
+}
+.showcase-image{
+  background:#0c0c0c;border:1px solid #302817;
+  border-radius:18px;padding:12px
+}
+.showcase-image img{
+  width:100%;max-height:560px;object-fit:contain;
+  display:block;border-radius:12px
+}
+.showcase-copy{padding:20px}
+.showcase-copy h2{font-size:clamp(38px,5vw,60px);line-height:1.05;margin:12px 0 18px}
+.showcase-copy p{color:#999;font-size:17px;line-height:1.8;margin-bottom:24px}
+
+.shop{
+  margin:20px 20px 80px;
+  padding:65px 25px;text-align:center;
+  border:1px solid rgba(233,181,45,.3);
+  border-radius:22px;
+  background:
+    radial-gradient(circle at 50% 0,rgba(233,181,45,.13),transparent 55%),
+    #101010
+}
+.shop h2{font-size:clamp(38px,5vw,60px);margin:10px 0 15px}
+.shop p{color:#999;max-width:720px;margin:0 auto 27px}
+.market{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.soon{
+  background:#171717;color:#8d8d8d;
+  border:1px solid #333;box-shadow:none;cursor:default
+}
+.soon:hover{transform:none;box-shadow:none}
+
+footer{
+  border-top:1px solid #222;
+  text-align:center;color:#777;
+  padding:38px 20px;font-size:12px
+}
+footer strong{color:var(--gold);font:900 18px Georgia,serif;letter-spacing:3px}
+
+.whatsapp{
+  position:fixed;right:24px;bottom:24px;z-index:999;
+  width:62px;height:62px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:#25d366;color:#fff;font-size:29px;
+  box-shadow:0 10px 35px rgba(0,0,0,.55);
+  border:2px solid rgba(255,255,255,.15)
+}
+.whatsapp:hover{transform:scale(1.06)}
+
+@media(max-width:1050px){
+  .hero{grid-template-columns:1fr;text-align:center;padding-top:55px}
+  .hero-copy{padding-left:0}
+  .hero p{margin-left:auto;margin-right:auto}
+  .actions{justify-content:center}
+  .hero-image img{max-width:650px}
+  .features{grid-template-columns:repeat(2,1fr)}
+  .showcase{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .navlinks{display:none}
+  nav{padding:13px 5px}
+  .logo{font-size:24px}
+  main{width:96%}
+  .hero{padding:45px 10px}
+  .section{padding:55px 10px}
+  .gallery{grid-template-columns:1fr}
+  .card img,.card.wide img{height:auto;max-height:520px}
+  .features{grid-template-columns:1fr}
+  .shop{margin-left:10px;margin-right:10px}
+  .whatsapp{right:17px;bottom:17px;width:57px;height:57px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+  <a class="logo" href="#">TAJ<small>SIGNATURE MASALA</small></a>
+
+  <div class="navlinks">
+    <a href="#products">Products</a>
+    <a href="#why">Why TAJ</a>
+    <a href="mailto:tajsignaturemasala@gmail.com">Contact</a>
+  </div>
+
+  <a class="btn" href="https://www.amazon.in/dp/B0HG63VC6R" target="_blank" rel="noopener">
+    🛒 Buy on Amazon
+  </a>
+</nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-copy">
+    <div class="kicker">AUTHENTIC • BOLD • FLAVOURFUL</div>
+    <h1>Bring the <span>TAJ Signature</span> Taste to Your Kitchen.</h1>
+    <p>
+      Authentic Indian masala blends created to bring rich aroma,
+      vibrant colour and unforgettable flavour to your favourite recipes.
+    </p>
+
+    <div class="actions">
+      <a class="btn" href="https://www.amazon.in/dp/B0HG63VC6R" target="_blank" rel="noopener">
+        🛒 Buy on Amazon
+      </a>
+      <a class="btn dark" href="#products">Explore Products</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="03.png" alt="TAJ Signature Masala">
+  </div>
+</section>
+
+<section class="section" id="products">
+  <div class="heading">
+    <div class="kicker">TAJ SIGNATURE COLLECTION</div>
+    <h2>Our <span>Signature</span> Masalas</h2>
+    <p>Premium spice blends designed to make everyday Indian cooking more flavourful.</p>
+  </div>
+
+  <div class="gallery">
+    <article class="card">
+      <img src="01.png" alt="TAJ Signature Fish Fry Masala">
+      <div class="card-content">
+        <h3>Fish Fry Masala</h3>
+        <p>Rich, aromatic spices for crispy and flavourful fish fry.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="02.png" alt="TAJ Signature Chicken Masala">
+      <div class="card-content">
+        <h3>Chicken Masala</h3>
+        <p>A bold Indian spice blend for delicious chicken dishes.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="03.png" alt="TAJ Signature Masala Range">
+      <div class="card-content">
+        <h3>TAJ Signature Range</h3>
+        <p>Authentic spice blends made for memorable home-cooked meals.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="why">
+  <div class="heading">
+    <div class="kicker">THE TAJ DIFFERENCE</div>
+    <h2>Made for <span>Great Food.</span></h2>
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon">🌶️</div>
+      <strong>Rich Flavour</strong>
+      <p>Balanced Indian spices for bold and delicious meals.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">✨</div>
+      <strong>Signature Aroma</strong>
+      <p>Aromatic blends that make every dish stand out.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🍳</div>
+      <strong>Easy to Use</strong>
+      <p>Convenient masala blends for everyday cooking.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🇮🇳</div>
+      <strong>Made in India</strong>
+      <p>Created for the authentic taste of Indian kitchens.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="showcase">
+    <div class="showcase-image">
+      <img src="taj-fish-fry-masala.jpeg" alt="TAJ Signature Fish Fry Masala">
+    </div>
+
+    <div class="showcase-copy">
+      <div class="kicker">TAJ SIGNATURE EXPERIENCE</div>
+      <h2>Turn simple ingredients into <span>memorable meals.</span></h2>
+      <p>
+        From crispy fish fry to rich chicken and mutton recipes,
+        TAJ Signature Masala brings a distinctive Indian spice experience
+        to your kitchen.
+      </p>
+      <a class="btn" href="https://www.amazon.in/dp/B0HG63VC6R" target="_blank" rel="noopener">
+        Buy on Amazon
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="shop" id="contact">
+  <div class="kicker">SHOP TAJ SIGNATURE</div>
+  <h2>Ready to taste the <span>difference?</span></h2>
+  <p>
+    Order TAJ Signature Masala on Amazon.
+    Available now on Amazon.
+  </p>
+
+  <div class="market">
+    <a class="btn" href="https://www.amazon.in/dp/B0HG63VC6R" target="_blank" rel="noopener">
+      🛒 Buy on Amazon
+    </a>
+    <a class="btn dark" href="mailto:tajsignaturemasala@gmail.com">
+      ✉ Contact Us
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <strong>TAJ SIGNATURE</strong>
+  <br>
+  Chicken • Mutton • Fish Fry Masala
+  <br><br>
+  © 2026 TAJ Signature. All rights reserved.
+</footer>
+
+<a class="whatsapp"
+   href="https://wa.me/916361896566?text=Hello%20TAJ%20Signature%2C%20I%20want%20to%20order%20your%20masala."
+   target="_blank" rel="noopener" aria-label="WhatsApp">
+  ☎
+</a>
+
+</body>
+</html>
