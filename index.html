@@ -18,6 +18,20 @@ body{
 :root{--gold:#e9b52d;--gold2:#ffd866;--dark:#0d0d0d;--muted:#a5a5a5}
 a{text-decoration:none}
 
+.top-bar{
+  background:#111;
+  color:var(--muted);
+  font-size:11px;
+  text-align:center;
+  padding:6px 10px;
+  letter-spacing:1px;
+  border-bottom:1px solid #222;
+}
+.top-bar span{
+  color:var(--gold);
+  font-weight:700;
+}
+
 header{
   position:sticky;top:0;z-index:100;
   background:rgba(7,7,7,.94);
@@ -109,6 +123,7 @@ h1 span,h2 span{color:var(--gold)}
   display:block;object-fit:contain;
   background:#090909
 }
+.card.wide img{height:390px}
 .card-content{padding:21px;text-align:center}
 .card h3{font-size:25px;margin-bottom:6px}
 .card p{color:#8f8f8f;font-size:13px}
@@ -152,6 +167,11 @@ h1 span,h2 span{color:var(--gold)}
 .shop h2{font-size:clamp(38px,5vw,60px);margin:10px 0 15px}
 .shop p{color:#999;max-width:720px;margin:0 auto 27px}
 .market{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.soon{
+  background:#171717;color:#8d8d8d;
+  border:1px solid #333;box-shadow:none;cursor:default
+}
+.soon:hover{transform:none;box-shadow:none}
 
 footer{
   border-top:1px solid #222;
@@ -187,7 +207,7 @@ footer strong{color:var(--gold);font:900 18px Georgia,serif;letter-spacing:3px}
   .hero{padding:45px 10px}
   .section{padding:55px 10px}
   .gallery{grid-template-columns:1fr}
-  .card img{height:auto;max-height:520px}
+  .card img,.card.wide img{height:auto;max-height:520px}
   .features{grid-template-columns:1fr}
   .shop{margin-left:10px;margin-right:10px}
   .whatsapp{right:17px;bottom:17px;width:57px;height:57px}
@@ -196,6 +216,11 @@ footer strong{color:var(--gold);font:900 18px Georgia,serif;letter-spacing:3px}
 </head>
 
 <body>
+
+<!-- Top Bar with Food License Registration Number -->
+<div class="top-bar">
+  FSSAI Registration Number: <span>23626330000049</span>
+</div>
 
 <header>
 <nav>
@@ -346,6 +371,8 @@ footer strong{color:var(--gold);font:900 18px Georgia,serif;letter-spacing:3px}
   <strong>TAJ SIGNATURE</strong>
   <br>
   Chicken • Mutton • Fish Fry Masala
+  <br>
+  FSSAI Registration Number: 23626330000049
   <br><br>
   © 2026 TAJ Signature. All rights reserved.
 </footer>
